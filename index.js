@@ -44,7 +44,7 @@ const start = () => {
     bot.on('callback_query', async msg => {
         const data = msg.data;
         const chatId = msg.message.chat.id;
-        if(data=="./again") {
+        if(data=="/again") {
             return startGame(chatId)
         }
         if (data === chats[chatId]) {
